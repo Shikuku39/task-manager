@@ -1,0 +1,119 @@
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.container {
+    padding: 0 150px;
+}
+
+header {
+    background-color: #A16AE8;
+    height: 80px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form {
+    margin: 5px 0;
+}
+
+input[type='text'] {
+    width: 50%;
+    padding: 9px;
+    font-size: 25px;
+    margin-right: 7px;
+}
+
+input[type='submit'] {
+    font-size: 25px;
+    padding: 9px 13px;
+    color: #fff;
+    background-color: #A16AE8;
+    border: 1px solid #A16AE8;
+}
+
+#tasks {
+    width: 70%;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 4px;
+    font-size: 25px;    
+    align-items: flex-start;
+}
+
+.task button {
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+    color: #fff;
+    padding: 4px 8px;
+}
+
+footer {
+    height: 50px;
+    border-top: 1px solid #4a4848;
+    color: #A16AE8;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@media screen and (max-width: 576px) {
+
+    header {
+        height: 50px;
+    }
+    h1 {
+        font-size: 23px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .container {
+        padding: 0 10px;
+    }  
+    form {
+        display: flex;
+        justify-content: space-between;
+    }
+    input[type='text'] {
+        width: 80%;
+        padding: 5px;
+        font-size: 20px;
+        margin-right: 4px;
+    } 
+    input[type='submit'] {
+        font-size: 20px;
+        padding: 5px;
+    } 
+    #tasks {
+        width: 100%;
+    }
+    .task {
+        padding: 5px;
+        margin-bottom: 4px;
+        font-size: 19px;
+        align-items: flex-start;
+    }
+    footer {
+        padding: 0 10px;
+        text-align: center;
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+}
